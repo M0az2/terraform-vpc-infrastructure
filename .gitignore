@@ -1,6 +1,7 @@
 # Downloaded providers & modules
 .terraform/
-
+docker-compose.yml
+.terraform.lock.hcl
 # State files (sensitive!)
 *.tfstate
 *.tfstate.*
