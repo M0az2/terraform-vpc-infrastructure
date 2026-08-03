@@ -2,19 +2,6 @@
 <p align="center"> <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" /> <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" /> <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" /> <img src="https://img.shields.io/badge/Floci-Local%20Emulator-4CAF50?style=for-the-badge" /> </p>
 
 
-📋 Table of Contents
-Overview
-Architecture
-Network Design
-Routing
-Prerequisites
-Getting Started
-Project Structure
-Configuration Variables
-Terraform Commands
-Outputs
-Author
-
 
 📌 Overview
 
