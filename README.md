@@ -47,31 +47,31 @@ The goal is to demonstrate Infrastructure as Code (IaC) best practices by buildi
                             Internet
                                │
                     ┌──────────▼──────────┐
-                    │   Internet Gateway   │
+                    │   Internet Gateway  │
                     └──────────┬──────────┘
                                │
          ┌─────────────────────▼─────────────────────┐
-         │               VPC  10.0.0.0/16             │
-         │                                             │
-         │   ┌─────────────────┐  ┌─────────────────┐ │
-         │   │  Public Subnet 1 │  │  Public Subnet 2 │ │
-         │   │  10.0.1.0/24    │  │  10.0.3.0/24    │ │
-         │   │  us-east-1a     │  │  us-east-1b     │ │
-         │   └────────┬────────┘  └─────────────────┘ │
-         │            │ Public Route Table              │
-         │            │ 0.0.0.0/0 ──► IGW              │
-         │   ┌────────▼────────┐                       │
-         │   │   NAT Gateway   │                       │
-         │   │  + Elastic IP   │                       │
-         │   └────────┬────────┘                       │
-         │            │ Private Route Table             │
-         │            │ 0.0.0.0/0 ──► NAT GW           │
-         │   ┌────────▼────────┐  ┌─────────────────┐ │
-         │   │ Private Subnet 1│  │ Private Subnet 2 │ │
-         │   │  10.0.2.0/24   │  │  10.0.4.0/24    │ │
-         │   │  us-east-1a    │  │  us-east-1b     │ │
-         │   └─────────────────┘  └─────────────────┘ │
-         └─────────────────────────────────────────────┘
+         │               VPC  10.0.0.0/16            │
+         │                                           │
+         │   ┌─────────────────┐  ┌─────────────────┐│
+         │   │  Public Subnet 1│  │  Public Subnet 2││
+         │   │  10.0.1.0/24    │  │  10.0.3.0/24    ││
+         │   │  us-east-1a     │  │  us-east-1b     ││
+         │   └────────┬────────┘  └─────────────────┘│
+         │            │ Public Route Table           │
+         │            │ 0.0.0.0/0 ──► IGW            │
+         │   ┌────────▼────────┐                     │
+         │   │   NAT Gateway   │                     │
+         │   │  + Elastic IP   │                     │
+         │   └────────┬────────┘                     │
+         │            │ Private Route Table          │
+         │            │ 0.0.0.0/0 ──► NAT GW         │
+         │   ┌────────▼────────┐  ┌─────────────────┐│
+         │   │ Private Subnet 1│  │ Private Subnet 2││
+         │   │  10.0.2.0/24    │  │  10.0.4.0/24    ││
+         │   │  us-east-1a     │  │  us-east-1b     ││
+         │   └─────────────────┘  └─────────────────┘│
+         └───────────────────────────────────────────┘
 ```
 
 ### Resources Provisioned
@@ -258,14 +258,5 @@ After a successful `terraform apply`, the following values are exported:
 
 ## 👤 Author
 
-**Moaz Naser**
-Cloud & DevOps Engineering Student · Cairo, Egypt
+**Moaz Nasr**
 
-[![GitHub](https://img.shields.io/badge/GitHub-M0az2-181717?style=flat&logo=github&logoColor=white)](https://github.com/M0az2)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR_LINKEDIN_HERE)
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
