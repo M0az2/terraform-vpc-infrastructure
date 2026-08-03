@@ -1,0 +1,11 @@
+# Downloaded providers & modules
+.terraform/
+
+# State files (sensitive!)
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+
+
